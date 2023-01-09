@@ -1,13 +1,16 @@
-export default async function RootLayout({
-                                           children,
-                                         }: {
-  children: React.ReactNode;
-}) {
+import '@/app/globals.css';
+
+import { FC, PropsWithChildren } from 'react';
+import FlowbiteContext from './context/FlowbiteContext';
+
+const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
-    <body >
-    {children}
-    </body>
+      <body>
+        <FlowbiteContext>{children}</FlowbiteContext>
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
