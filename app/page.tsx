@@ -20,7 +20,7 @@ export default function Index(): JSX.Element {
     <SidebarProvider>
       <Header />
       <div className="flex dark:bg-gray-900">
-        <main className="order-2 mx-4 mt-4 mb-24 flex-[1_0_16rem]">
+        <main className="order-2 mx-4 mt-4 mb-24 flex-[1_0_16rem] h-screen">
           <HomePage />
         </main>
         <div className="order-1">
